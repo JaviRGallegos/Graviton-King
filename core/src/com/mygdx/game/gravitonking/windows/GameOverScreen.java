@@ -36,15 +36,15 @@ public class GameOverScreen extends BaseScreen{
 
     @Override
     public void render(float delta) {
-        stage.draw();
+        stage.draw(); // Dibujamos el nuevo escenario
         stage.act();
-        boolean retry = Gdx.input.justTouched();
+        boolean retry = Gdx.input.justTouched(); // Lanzamos el evento cuando se toque estando la pantalla de Game Over
         if(retry){
             this.stage.addAction(Actions.sequence(
                     Actions.run(new Runnable() {
                         @Override
                         public void run() {
-                            mainGame.setScreen(new GameScreen(mainGame));
+                            mainGame.setScreen(new GameScreen(mainGame)); // Volvemos al juego
                         }
                     })
             ));

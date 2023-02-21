@@ -83,7 +83,7 @@ public class GameScreen extends BaseScreen implements ContactListener {
         this.deathSound = this.mainGame.assetManager.getDeathSound();
 
         this.camera = (OrthographicCamera) this.stage.getCamera();
-        //this.debugRenderer = new Box2DDebugRenderer();
+        //this.debugRenderer = new Box2DDebugRenderer(); // Debug
         
         prepareScore();
         score_meter = 0;
@@ -239,7 +239,7 @@ public class GameScreen extends BaseScreen implements ContactListener {
                     Actions.run(new Runnable() {
                         @Override
                         public void run() {
-                            mainGame.setScreen(new GameOverScreen(mainGame));
+                            mainGame.setScreen(new GameOverScreen(mainGame)); // Mandamos a GameOverScreen
                         }
                     })
             ));

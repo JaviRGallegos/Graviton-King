@@ -6,7 +6,7 @@ public class Utils {
     public static final int SCREEN_HEIGHT = 480;
     public static final int SCREEN_WIDTH = 800;
 
-    /** FUNENTES **/
+    /** FUENTES **/
     //Normal
     public static final String NORMAL_FONT_FNT = "Futura.fnt";
     public static final String NORMAL_FONT_PNG = "Futura.png";

@@ -24,7 +24,6 @@ public class Wall extends Actor {
     private Fixture wallFixture;
     private World world;
 
-    // Constructor
 
     public Wall(World world,TextureRegion wallTR, Vector2 position) {
         this.wallTR = wallTR;
@@ -37,9 +36,9 @@ public class Wall extends Actor {
     private void createBodyWall(Vector2 position) {
         BodyDef def = new BodyDef();
         def.position.set(position);
-        def.type = BodyDef.BodyType.KinematicBody; // Kinematico porque no le afecta la gravedad
+        def.type = BodyDef.BodyType.KinematicBody; // Kinemático porque no le afecta la gravedad
         body = world.createBody(def);
-        body.setLinearVelocity(-6f, 0);
+        body.setLinearVelocity(-6f, 0); // El muro se mueve hacia la izquierda, de ahí la velocidad negativa en x
     }
 
     private void createFixture() {
@@ -53,14 +52,14 @@ public class Wall extends Actor {
 
     public void stopWalls(){
         this.body.setLinearVelocity(0, 0);
-    }
+    } // Método para parar muros
 
     @Override
     public void act(float delta) {
         super.act(delta);
     }
 
-    public boolean isOutOfScreen(){
+    public boolean isOutOfScreen(){ // Método para detectar si los muros están fuera de la pantalla
         return this.body.getPosition().x <= -2f;
     }
 
@@ -71,7 +70,7 @@ public class Wall extends Actor {
         batch.draw(this.wallTR, getX(), getY(), WALL_WIDTH, WALL_HEIGHT);
     }
 
-    /** Liberar recursos **/
+    /** Liberar recursos de la GPU **/
     public void detach(){
         body.destroyFixture(wallFixture);
         world.destroyBody(body);

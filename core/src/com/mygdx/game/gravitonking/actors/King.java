@@ -73,7 +73,7 @@ public class King extends Actor {
 
     }
 
-    private void animation(){
+    private void animation(){ // Setear la animación según el estado del personaje
         if(this.state == STATE_NORMAL){
             this.kingAnimation = this.kingNormalAnimation;
         } else if (this.state == STATE_INVERTED) {
@@ -81,7 +81,6 @@ public class King extends Actor {
         }
     }
 
-    // Sobrecarga de los métodos draw y act
     @Override
     public void act(float delta) {
         boolean inversion = Gdx.input.justTouched();
