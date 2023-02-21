@@ -18,7 +18,6 @@ public class GameOverScreen extends BaseScreen{
 
     public GameOverScreen(MainGame mainGame) {
         super(mainGame);
-        System.out.println("HOLAAAAAAAAAAAAAAAAA");
         FitViewport fitViewport = new FitViewport(WORLD_WIDTH, WORLD_HEIGHT);
         this.stage = new Stage(fitViewport);
     }
