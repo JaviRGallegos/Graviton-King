@@ -1,0 +1,83 @@
+
+Graviton.png
+size: 1024, 1024
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+GO_bg
+  rotate: false
+  xy: 2, 326
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+King1
+  rotate: false
+  xy: 2, 2
+  size: 17, 24
+  orig: 17, 24
+  offset: 0, 0
+  index: -1
+King2
+  rotate: false
+  xy: 516, 276
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+King3
+  rotate: false
+  xy: 516, 301
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+King4
+  rotate: false
+  xy: 822, 758
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+King_inv1
+  rotate: false
+  xy: 21, 29
+  size: 17, 24
+  orig: 17, 24
+  offset: 0, 0
+  index: -1
+King_inv2
+  rotate: false
+  xy: 536, 301
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+King_inv3
+  rotate: false
+  xy: 822, 783
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+King_inv4
+  rotate: false
+  xy: 2, 28
+  size: 17, 25
+  orig: 17, 25
+  offset: 0, 0
+  index: -1
+Tet
+  rotate: false
+  xy: 2, 55
+  size: 512, 269
+  orig: 512, 269
+  offset: 0, 0
+  index: -1
+wall
+  rotate: false
+  xy: 804, 744
+  size: 16, 62
+  orig: 16, 62
+  offset: 0, 0
+  index: -1
